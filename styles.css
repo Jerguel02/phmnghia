@@ -12,18 +12,18 @@ body {
   box-sizing: border-box;
 }
 section {
-  width: 100%; /* Chiều rộng bằng 100% của viewport */
+  width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-sizing: border-box; /* Bao gồm padding và border trong chiều rộng */
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
   color: rgb(0, 0, 0);
   cursor: pointer;
   overflow: hidden;
-  transition: transform 0.5s ease; /* Thêm transform vào transition */
+  transition: transform 0.5s ease;
 }
 .scroll-container {
   scroll-snap-type: y mandatory;
@@ -32,7 +32,7 @@ section {
 }
 
 .page {
-  scroll-snap-align: start; /* Mỗi trang dừng tại đầu phần tử */
+  scroll-snap-align: start;
   height: 100vh;
   width: 100%;
   display: flex;
@@ -42,32 +42,25 @@ section {
   padding: 20px;
   box-sizing: border-box;
 }
-/*
-.page:nth-child(odd) {
-  background-color: #f4f4f4;
-}
 
-.page:nth-child(even) {
-  background-color: #ffffff;
-}*/
 .scroll-container {
   scroll-behavior: smooth;
 }
 
 .image-popup {
   position: fixed;
-  bottom: 10px; /* Đảm bảo hình ảnh luôn ở góc dưới bên trái */
+  bottom: 10px;
   left: 10px;
-  opacity: 0; /* Bắt đầu hình ảnh ẩn */
-  visibility: hidden; /* Bắt đầu với hình ảnh ẩn */
-  transition: opacity 0.3s ease, visibility 0s 0.3s; /* Thêm hiệu ứng mượt mà cho opacity */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0s 0.3s;
   z-index: 9999;
 }
 
 .image-popup.show {
-  opacity: 1; /* Hiển thị hình ảnh khi có class 'show' */
-  visibility: visible; /* Đảm bảo hình ảnh có thể nhìn thấy */
-  transition: opacity 0.3s ease, visibility 0s 0s; /* Hiệu ứng opacity */
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease, visibility 0s 0s;
 }
 
 .image-popup img {
@@ -80,14 +73,12 @@ section {
 
 .bg-pan-top {
   background-image: linear-gradient(45deg, #007bff, #6610f2);
-  background-size: 200% 200%; /* Kích thước nền lớn để tạo hiệu ứng di chuyển */
-  height: 100%; /* Đảm bảo chiều cao đủ để thấy hiệu ứng */
+  background-size: 200% 200%;
+  height: 100%;
   width: 100%;
   -webkit-animation: bg-pan-top 8s infinite alternate-reverse both;
   animation: bg-pan-top 8s infinite alternate-reverse both;
 }
-
-/* Keyframes */
 
 @-webkit-keyframes color-change-5x {
   0% {
@@ -130,41 +121,39 @@ section {
 }
 
 .word {
-  color: #ffd966; /* Màu xanh dương cho từ */
+  color: #ffd966;
   font-weight: bold;
 }
 
 .slogan {
-  color: #e9ecef; /* Màu xám cho slogan */
+  color: #e9ecef;
   font-style: italic;
 }
 
 #cursor {
-  opacity: 0; /* Hiển thị con trỏ */
-  font-weight: bold; /* Giữ con trỏ đậm */
-  color: #ffffff; /* Màu của con trỏ */
-  font-size: 2rem; /* Điều chỉnh kích thước con trỏ */
-  line-height: 1; /* Giữ con trỏ sát với văn bản */
-  transform: scaleX(5); /* Tăng chiều ngang gấp đôi */
-  display: inline-block; /* Hiển thị con trỏ như một khối */
-  transition: opacity 3s ease 3s; /* Hiện ra sau 1 giây */
-  animation: none; /* Hiệu ứng nhấp nháy */
+  opacity: 0;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 2rem;
+  line-height: 1;
+  transform: scaleX(5);
+  display: inline-block;
+  transition: opacity 3s ease 3s;
+  animation: none;
 }
 
-/* Hiển thị tên ngành học */
 #degree {
   font-size: 1.2rem;
   color: #e9ecef;
   font-family: Nunito;
-  opacity: 0; /* Ban đầu ẩn */
-  transform: translateY(30px); /* Dịch xuống */
-  transition: opacity 1s ease, transform 1s ease; /* Hiệu ứng rõ dần */
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease, transform 1s ease;
 }
 
-/* Hiệu ứng FadeIn cho tên */
 h1 {
-  opacity: 0; /* Ban đầu ẩn */
-  transition: opacity 1s ease 1s; /* Hiện ra sau 1 giây */
+  opacity: 0;
+  transition: opacity 1s ease 1s;
 }
 
 header .social-icon {
@@ -271,11 +260,6 @@ header .social-icon ul li:nth-child(4):hover span {
   }
 }
 
-/*@keyframes blink {
-    0% {
-        opacity: 0; 
-    }
-}*/
 .color-change-5x {
   -webkit-animation: color-change-5x 15s linear infinite alternate both;
   animation: color-change-5x 15s linear infinite alternate both;
@@ -283,14 +267,14 @@ header .social-icon ul li:nth-child(4):hover span {
 
 header {
   background-image: linear-gradient(45deg, #b0c7e3, #d3c6e8);
-  background-size: 200% 200%; /* Kích thước nền lớn để tạo hiệu ứng di chuyển */
-  height: 100vh; /* Chiều cao của header là 100% chiều cao màn hình */
-  width: 100vw; /* Đảm bảo header chiếm toàn bộ chiều rộng của viewport */
+  background-size: 200% 200%;
+  height: 100vh;
+  width: 100vw;
   color: white;
   text-align: center;
-  padding: 50px 20px; /* Khoảng cách nội dung với viền */
-  box-sizing: border-box; /* Đảm bảo padding được tính trong chiều cao và chiều rộng */
-  margin: 0; /* Loại bỏ khoảng cách ngoài */
+  padding: 50px 20px;
+  box-sizing: border-box;
+  margin: 0;
 }
 header h1 {
   font-size: 100px;
@@ -315,10 +299,10 @@ header .btn:hover {
 }
 header .container {
   display: flex;
-  flex-direction: column; /* Các phần tử con sẽ xếp theo chiều dọc */
-  align-items: center; /* Căn giữa theo chiều ngang */
-  justify-content: center; /* Căn giữa theo chiều dọc */
-  height: 100vh; /* Đảm bảo container chiếm toàn bộ chiều cao */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 header span.first-name {
@@ -500,12 +484,12 @@ section.page .experience ul li {
   font-size: 1rem;
 }
 .card-header a {
-  text-decoration: none; /* Bỏ gạch chân */
-  color: inherit; /* Giữ màu giống với tiêu đề */
+  text-decoration: none;
+  color: inherit;
 }
 
 .card-header a:hover {
-  color: #007bff; /* Đổi màu khi hover */
+  color: #007bff;
 }
 .card-header {
   background: #f5f5f5;
@@ -517,21 +501,21 @@ section.page .experience ul li {
 }
 
 .card-header:hover {
-  background: #e9ecef; /* Thay đổi màu nền khi hover */
+  background: #e9ecef;
   font-size: 1em;
   transition: 0.3s ease;
 }
 
 .card-body {
-  max-height: 0; /* Ẩn nội dung khi bình thường */
-  overflow: hidden; /* Không hiển thị nội dung khi bị ẩn */
-  padding: 0 15px; /* Giữ không gian padding khi mở rộng */
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 15px;
   background-color: #ccc;
   transition: max-height 0.5s ease, padding 0.3s ease;
 }
 .card:hover .card-body {
-  max-height: 500px; /* Đặt giá trị đủ lớn để hiển thị toàn bộ nội dung */
-  padding: 15px; /* Đảm bảo hiển thị padding */
+  max-height: 500px;
+  padding: 15px;
   transition: max-height 0.5s ease, padding 0.3s ease;
 }
 
@@ -543,29 +527,21 @@ footer {
   margin-top: 20px;
 }
 
-/* Animation for section appearance on scroll */
-/* Ẩn phần tử ban đầu với hiệu ứng trượt từ bên phải */
 .hidden_right {
   opacity: 0;
-  transform: translateX(
-    50px
-  ); /* Di chuyển phần tử ra khỏi màn hình từ bên phải */
+  transform: translateX(50px);
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
-/* Ẩn phần tử ban đầu với hiệu ứng trượt từ bên trái */
 .hidden_left {
   opacity: 0;
-  transform: translateX(
-    -50px
-  ); /* Di chuyển phần tử ra khỏi màn hình từ bên trái */
+  transform: translateX(-50px);
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
-/* Khi phần tử xuất hiện, di chuyển về vị trí ban đầu */
 .show {
   opacity: 1;
-  transform: translateX(0); /* Di chuyển về vị trí gốc */
+  transform: translateX(0);
   transition: opacity 0.6s ease-in, transform 0.6s ease-in;
 }
 .objective-container {
@@ -650,8 +626,8 @@ footer {
   padding: 20px 0;
   width: 90%;
   max-width: 100%;
-  max-height: 600px; /* Chiều cao tối đa của timeline */
-  overflow-y: auto; /* Hiển thị thanh cuộn dọc nếu nội dung vượt quá chiều cao */
+  max-height: 600px;
+  overflow-y: auto;
   overflow-x: hidden;
 }
 
@@ -756,12 +732,12 @@ footer {
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
-  outline: none; /* Xóa viền mặc định */
+  outline: none;
 }
 
 .learn-more-btn:focus {
   outline: none;
-  box-shadow: 0 0 5px 3px rgba(38, 143, 255, 0.5); /* Hiệu ứng focus với bóng đổ */
+  box-shadow: 0 0 5px 3px rgba(38, 143, 255, 0.5);
 }
 
 .learn-more-btn::before {
@@ -792,12 +768,12 @@ footer {
 }
 
 #contact {
-  background-color: #f7f7f7; /* Nền sáng, tối giản */
+  background-color: #f7f7f7;
   padding: 60px 0;
   text-align: center;
-  color: #333; /* Màu chữ tối cho dễ đọc */
+  color: #333;
   position: relative;
-  border-top: 5px solid #ff6f61; /* Viền trên màu sáng làm điểm nhấn */
+  border-top: 5px solid #ff6f61;
 }
 
 #contact h2 {
@@ -821,10 +797,10 @@ footer {
   margin: 15px 0;
   padding: 12px 20px;
   background-color: white;
-  border-radius: 30px; /* Bo góc mềm mại */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Bóng đổ nhẹ */
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-width: 400px; /* Chiều rộng giới hạn */
+  max-width: 400px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -838,12 +814,12 @@ footer {
 }
 
 .contact-info p:hover {
-  transform: translateY(-5px); /* Hiệu ứng khi hover */
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Tăng bóng đổ khi hover */
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
 .contact-info p i:hover {
-  color: #ff9f80; /* Màu thay đổi của biểu tượng khi hover */
+  color: #ff9f80;
 }
 
 #contact::before {
@@ -858,7 +834,7 @@ footer {
   opacity: 0.1;
   z-index: -1;
 }
-/* Căn chỉnh các nút trong cùng một dòng */
+
 header .container .btn {
   opacity: 0;
   display: inline-block;
@@ -877,7 +853,6 @@ header .container .btn:hover {
   color: white;
 }
 
-/* Modal styles (đã có sẵn từ trước) */
 .modal {
   display: none;
   position: fixed;
