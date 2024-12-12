@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pham Huu Nghia - Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#aboutme">Welcome</a></li>
+        <li><a href="#objective">Summary</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="scroll-container">
+      <header id="aboutme" class="color-change-5x page">
+        <div class="container">
+          <h1 style="font-family: 'Nunito Light', sans-serif">
+            <span class="first-name">Pham</span>
+            <span class="last-name">Nghia</span>
+          </h1>
+          <h2 id="degree">Bachelor of Computer Engineering Technology</h2>
+          <div id="typed-container">
+            <span id="typed-text"></span><span id="cursor">|</span>
+          </div>
+          <a href="#contact" class="btn">Contact Me</a>
+          <button id="previewBtn" class="btn">Preview CV</button>
+          <div id="previewModal" class="modal">
+            <div class="modal-content">
+              <span id="closeModal" class="close">&times;</span>
+              <embed
+                src="CV/My CV-Pham Huu Nghia.pdf"
+                type="application/pdf"
+                width="100%"
+                height="500px"
+              />
+              <a
+                href="CV/My CV-Pham Huu Nghia.pdf"
+                download="My_CV"
+                class="btn download-btn"
+                >Download CV</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="social-icon">
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/huunghia.25012002.vktgvn">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="fa fa-facebook"></span>
+              </a>
+            </li>
+            <li>
+              <a href="https://x.com/AlexPhamNghia">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="fa fa-twitter"></span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/alexphng02/">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="fa fa-instagram"></span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/phamnghia250102/">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="fa fa-linkedin"></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </header>
+
+      <main>
+        <section
+          class="page"
+          id="objective"
+          data-bg-image="img/programming.png"
+        >
+          <div class="objective-container">
+            <div class="objective-content">
+              <h2>Summary</h2>
+              <p>
+                Passionate software programmer with expertise in C, C++, and
+                Python. Skilled in algorithm, data structures, and
+                problem-solving, with experience in developing efficient
+                solutions and automating workflows. Constantly seeking
+                opportunities to enhance technical knowledge and create
+                impactful software.
+              </p>
+            </div>
+            <div class="objective-stats">
+              <ul>
+                <li>
+                  <strong>Total Projects:</strong>
+                  <span class="counter" data-count="11">0</span>
+                </li>
+                <li>
+                  <strong>C/C++ Projects:</strong>
+                  <span class="counter" data-count="5">0</span>
+                </li>
+                <li>
+                  <strong>Python Projects:</strong>
+                  <span class="counter" data-count="3">0</span>
+                </li>
+                <li>
+                  <strong>Verilog:</strong>
+                  <span class="counter" data-count="2">0</span>
+                </li>
+                <li>
+                  <strong>MATLAB/Simulink:</strong>
+                  <span class="counter" data-count="1">0</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section
+          class="page"
+          id="education"
+          data-bg-image="img/education_fix.png"
+        >
+          <div class="education-container">
+            <h2>Education</h2>
+
+            <div class="education-card">
+              <img src="img/university_logo.png" alt="University Logo" />
+              <div class="education-details">
+                <h3>Ho Chi Minh City University of Technology and Education</h3>
+                <p><strong>Duration:</strong> August 2020 - August 2024</p>
+                <p><strong>GPA:</strong> 2.90</p>
+                <p>
+                  <strong>Achievements:</strong>
+                </p>
+
+                <p>
+                  > 3rd prize for the Xmas Gift model designing and LED effect
+                  programming competition (Organized by the Faculty of
+                  Electrical and Electronics Engineering, HCMUTE).
+                </p>
+                <p>> Study Encouragement Scholarship (2023) (B type).</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          class="page"
+          id="experience"
+          data-bg-image="img/experience.png"
+        >
+          <section class="timeline">
+            <h2 class="timeline-title">My Memorable Experiences</h2>
+
+            <ul>
+              <li>
+                <div class="content">
+                  <h2>
+                    <time
+                      >08/2024 - Working as a Freelancer in Embedded IoT
+                      Programming</time
+                    >
+                  </h2>
+                  <p>
+                    At this time, I took on a job where I worked with my first
+                    client. The process of communication, receiving
+                    requirements, and providing support helped me develop some
+                    skills in working with clients, self-discipline, time
+                    management, and quickly learning new technologies to meet
+                    client demands. The job sounds easy, but it's challenging,
+                    though enjoyable.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="content">
+                  <h2>
+                    <time
+                      >8/2023 - C/C++/Embedded Dev Engineer (Intern)| TMA
+                      Solutions | District 12, Ho Chi Minh City (3 mths)</time
+                    >
+                  </h2>
+                  <p>
+                    This truly is a major turning point. Throughout the
+                    internship, I was able to apply some of the knowledge I had
+                    learned previously to tackle tasks set by my mentor and
+                    perform well in them. This helped me improve my ability to
+                    manage work, enhance my professional skills, and learn many
+                    new skills that I hadn't had the chance to learn before. I’m
+                    really grateful for this period of time.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="content">
+                  <h2>
+                    <time
+                      >12/2022 - Participating in the LED Effect Programming
+                      X-Mas Gift Competition</time
+                    >
+                  </h2>
+                  <p>
+                    This time was a bit tough? It was the end of the semester
+                    while also participating in the competition. But it was
+                    during this period that I developed the ability to manage my
+                    time and quickly improve my professional skills to keep up
+                    with the competition. I even won third place, which became a
+                    small yet significant source of motivation.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="content">
+                  <h2>
+                    <time
+                      >05/2022 - Participating in the Animal Robot Competition
+                      Season IV
+                    </time>
+                  </h2>
+                  <p>
+                    The competition involved designing a robot dog to follow a
+                    pre-drawn line, cross "mountain passes" and overcome
+                    obstacles to reach the destination. Although it won the
+                    title "Failure without Discouragement", it still left behind
+                    a memorable experience.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </section>
+
+        <section class="page" id="projects" data-bg-image="#f4f4f4">
+          <h2>Projects</h2>
+          <div class="card project">
+            <div class="card-header">
+              <a href="https://github.com/Jerguel02/QuangBao" target="_blank">
+                <h3>Design Billboard Advertisement Using P5 LED Matrix</h3>
+              </a>
+            </div>
+            <div class="card-body">
+              <p><strong>Languages:</strong> C/C#</p>
+              <p>
+                <strong>Description:</strong> Write a C program to load into the
+                microcontroller for displaying desired images on a P5 LED
+                matrix. The data input to the module will go through a
+                conversion step from an image to Hex code using Winform. Develop
+                a program to accomplish this task.
+              </p>
+              <p>
+                <strong>Tools:</strong> STM32CubeMX, STM32CubeIDE, KeilC, Visual
+                Studio.
+              </p>
+            </div>
+          </div>
+          <div class="card project">
+            <div class="card-header">
+              <a
+                href="https://drive.google.com/drive/folders/17iSgkhFA5yaKx_7EBLJICc_E1_vmgKsp?usp=drive_link"
+                target="_blank"
+              >
+                <h3>
+                  The automatic mulberry cultivation system uses hydroponic
+                  methods
+                </h3>
+              </a>
+            </div>
+            <div class="card-body">
+              <p><strong>Languages:</strong> C++/Python</p>
+              <p>
+                <strong>Description:</strong> The mulberry cultivation system is
+                cared for through automatic observation and utilizes IoT
+                knowledge to implement the system, using ESP32 hardware and
+                controlled via a web interface and TFT touchscreen.
+                Communication between the web and ESP32 is done through
+                Firebase, optimizing and enhancing the system's smoothness by
+                using FreeRTOS.
+              </p>
+              <p>
+                <strong>Hardware:</strong> 4" TFT screen, ESP32, sensor, motor,
+                ACS712 (30A), Relay
+              </p>
+              <p>
+                <strong>Processes/Tasks/Interfaces:</strong> SPI, I2C +
+                Interrupt, FreeRTOS, multitasking.
+              </p>
+              <p>
+                <strong>Frameworks:</strong> FreeRTOS, PyQt5 (Design an
+                application with an interface that converts images to hex code,
+                and creates images by drawing pixels on the app.)
+              </p>
+              <p><strong>Tools:</strong> Arduino IDE, VS Code, Altium.</p>
+              <p><strong>Programming Techniques:</strong> OOP, RTOS.</p>
+            </div>
+          </div>
+
+          <div class="card project">
+            <div class="card-header">
+              <a
+                href="https://github.com/Jerguel02/YOLO-Based-Sign-Language-Recognition-for-Deaf-Blind-and-Dumb-Individuals-For-Jetson-Nano"
+                target="_blank"
+              >
+                <h3>
+                  YOLO-based Sign Language Recognition for Deaf, Blind and Dumb
+                  Individuals
+                </h3>
+              </a>
+            </div>
+            <div class="card-body">
+              <p><strong>Languages:</strong> Python/C++</p>
+              <p>
+                <strong>Description:</strong> Use YOLOv8 algorithm to recognize
+                sign language gestures. Translate gestures into text and audio
+                and analyze facial expressions to understand the user's
+                emotional state better. Use push buttons combined with interrupt
+                handling to perform a task inside a PyQt5 application.
+              </p>
+              <p>
+                <strong>Hardware:</strong> Embedded computer (Jetson Nano),
+                Camera, Screen, Speaker/headphone
+              </p>
+              <p>
+                <strong>Processes/Tasks/Interfaces:</strong> Interrupt Handling,
+                Multithreading
+              </p>
+              <p><strong>Frameworks:</strong> PyQt5, PyTorch</p>
+              <p><strong>OS:</strong> Linux.</p>
+              <p><strong>Programming Techniques:</strong> OOP</p>
+            </div>
+          </div>
+          <div class="card project">
+            <div class="card-header">
+              <a
+                href="https://github.com/Jerguel02/FIR_IIR_Filter.git"
+                target="_blank"
+              >
+                <h3>
+                  Design and Simulation of a Digital Signal Processing FIR
+                  Filter on FPGA
+                </h3>
+              </a>
+            </div>
+            <div class="card-body">
+              <p><strong>Languages:</strong> MATLAB, Verilog</p>
+              <p>
+                <strong>Description:</strong> The FIR Filter project focuses on
+                designing a digital filter for signal processing on an FPGA,
+                offering key functionalities such as noise removal and unwanted
+                frequency filtering. Its high-performance implementation on FPGA
+                enables faster signal processing compared to traditional CPUs or
+                MCUs, ensuring real-time compatibility with minimal latency for
+                embedded applications. Practical applications include filtering
+                sensor signals in IoT systems, audio signal processing in
+                communication devices, and enhancing signal quality in medical
+                devices such as ECG or EEG systems.
+              </p>
+              <p><strong>Hardware:</strong> TangNano9K</p>
+              <p><strong>Tools: </strong> MATLAB, Vivado (Simulate), Gowin</p>
+            </div>
+          </div>
+          <div style="text-align: center; margin-top: 20px">
+            <span
+              ><a
+                href="https://github.com/Jerguel02?tab=repositories"
+                class="learn-more-btn"
+                >Learn More</a
+              ></span
+            >
+          </div>
+        </section>
+
+        <section class="page" id="contact" data-bg-image="#f4f4f4">
+          <h2>Contact</h2>
+          <div class="contact-info">
+            <p><i class="fas fa-envelope"></i> huunghia250102@gmail.com</p>
+            <p><i class="fas fa-phone"></i> 0817819589</p>
+          </div>
+        </section>
+        <div id="image-popup" class="image-popup">
+          <img src="" alt="Hovered Image" id="popup-image" />
+        </div>
+      </main>
+
+      <footer>
+        <p>© 2024 Pham Huu Nghia</p>
+      </footer>
+    </div>
+  </body>
+</html>
