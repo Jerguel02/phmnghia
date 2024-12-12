@@ -27,7 +27,7 @@ section {
 }
 .scroll-container {
   scroll-snap-type: y mandatory;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   overflow-y: auto;
 }
@@ -160,8 +160,8 @@ h1 {
 header .social-icon {
   opacity: 0;
   position: relative;
-  bottom: 120px;
-  right: -600px;
+  bottom: 140px;
+  right: -550px;
   display: flex;
   gap: 15px;
   transform: translateY(30px);
@@ -351,7 +351,7 @@ nav ul li a:hover {
 }
 
 main {
-  max-width: 100%;
+  width: 100vw;
 }
 
 h2 {
@@ -530,13 +530,13 @@ footer {
 
 .hidden_right {
   opacity: 0;
-  transform: translateX(50px);
+  /*transform: translateX(50px);*/
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
 .hidden_left {
   opacity: 0;
-  transform: translateX(-50px);
+  /*transform: translateX(-50px);*/
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
