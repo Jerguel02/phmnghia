@@ -892,6 +892,7 @@ header .container .btn:hover {
   color: #333;
   text-transform: uppercase;
   letter-spacing: 1.5px;
+  font-family: Nunito;
 }
 
 .contact-container {
@@ -904,13 +905,13 @@ header .container .btn:hover {
   overflow: hidden;
 }
 
-/* Contact Form Styles */
 .contact-form {
   flex: 1;
-  min-width: 700px;
+  min-width: 750px;
   padding: 30px;
-  background: #f7f8fa;
+  background: #e0e4ec;
   border-right: 1px solid #e9ecef;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
 .contact-form form {
@@ -975,7 +976,7 @@ input:not(:placeholder-shown) + .underline + label,
 textarea:focus + .underline + label,
 textarea:not(:placeholder-shown) + .underline + label {
   top: -10px;
-  font-size: 12px;
+  font-size: 15px;
   color: #007bff;
 }
 
