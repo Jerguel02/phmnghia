@@ -343,3 +343,26 @@ window.addEventListener("click", (event) => {
     modal.style.display = "none";
   }
 });
+
+emailjs.init("S6SYGP8fbxeLs2-o0");
+
+document
+  .getElementById("contactForm")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const form = event.target;
+    console.log(form);
+
+    emailjs.sendForm("service_7t0cyl1", "template_wsww9lu", form).then(
+      function (response) {
+        alert("Message sent successfully!");
+        form.reset();
+        ng;
+      },
+      function (error) {
+        alert("Failed to send message. Please try again.");
+        console.error("EmailJS Error:", error);
+      }
+    );
+  });

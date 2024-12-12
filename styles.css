@@ -28,6 +28,7 @@ section {
 .scroll-container {
   scroll-snap-type: y mandatory;
   height: 100vh;
+  width: 100%;
   overflow-y: auto;
 }
 
@@ -883,4 +884,149 @@ header .container .btn:hover {
   font-size: 24px;
   font-weight: bold;
   cursor: pointer;
+}
+
+.contact-container h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Contact Form Styles */
+.contact-form {
+  flex: 1;
+  min-width: 700px;
+  padding: 30px;
+  background: #f7f8fa;
+  border-right: 1px solid #e9ecef;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row {
+  margin-bottom: 45px;
+}
+
+.input-data {
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.input-data input,
+.input-data textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  background: none;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.input-data input:focus,
+.input-data textarea:focus {
+  border-color: #007bff;
+}
+
+.underline {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #007bff;
+  transition: width 0.3s;
+}
+
+.input-data input:focus ~ .underline,
+.input-data textarea:focus ~ .underline {
+  width: 100%;
+}
+
+label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: #aaa;
+  font-size: 14px;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+
+input:focus + .underline + label,
+input:not(:placeholder-shown) + .underline + label,
+textarea:focus + .underline + label,
+textarea:not(:placeholder-shown) + .underline + label {
+  top: -10px;
+  font-size: 12px;
+  color: #007bff;
+}
+
+.submit-btn input {
+  padding: 10px 20px;
+  background: #007bff;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.submit-btn input:hover {
+  background: #0056b3;
+}
+
+/* Contact Info Styles */
+.contact-info {
+  flex: 1;
+  min-width: 300px;
+  padding: 30px;
+  background: #007bff;
+  color: #fff;
+}
+
+.contact-info h2 {
+  color: #fff;
+}
+
+.info p {
+  margin: 10px 0;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  color: #354a40;
+}
+
+.info p i {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+  .contact-form {
+    border-right: none;
+    border-bottom: 1px solid #e9ecef;
+  }
 }

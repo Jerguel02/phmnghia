@@ -22,7 +22,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
     />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.emailjs.com/dist/email.min.js"
+    ></script>
   </head>
   <body>
     <nav>
@@ -406,17 +409,82 @@
             >
           </div>
         </section>
+        <section class="page" id="contact" data-bg-image="#918080">
+          <div class="contact-container">
+            <!-- Contact Form -->
+            <div class="contact-form">
+              <h2>Contact Me</h2>
+              <form id="contactForm" enctype="multipart/form-data">
+                <div class="form-row">
+                  <!-- Name Input -->
+                  <div class="input-data">
+                    <input type="text" id="name" name="name" required />
+                    <div class="underline"></div>
+                    <label for="name">Your Name</label>
+                  </div>
 
-        <section class="page" id="contact" data-bg-image="#f4f4f4">
-          <h2>Contact</h2>
-          <div class="contact-info">
-            <p><i class="fas fa-envelope"></i> huunghia250102@gmail.com</p>
-            <p><i class="fas fa-phone"></i> 0817819589</p>
+                  <!-- Email Input -->
+                  <div class="input-data">
+                    <input type="email" id="email" name="email" required />
+                    <div class="underline"></div>
+                    <label for="email">Your Email</label>
+                  </div>
+                  <div class="input-data">
+                    <input
+                      type="subject"
+                      id="subject"
+                      name="subject"
+                      required
+                    />
+                    <div class="underline"></div>
+                    <label for="subject">Subject</label>
+                  </div>
+                </div>
+
+                <!-- Message Textarea -->
+                <div class="form-row">
+                  <div class="input-data textarea">
+                    <textarea
+                      id="message"
+                      name="message"
+                      rows="7"
+                      required
+                    ></textarea>
+                    <div class="underline"></div>
+                    <label for="message">Your Message</label>
+                  </div>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="form-row submit-btn">
+                  <div class="input-data">
+                    <div class="inner"></div>
+                    <input type="submit" value="Send Message" />
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="contact-info">
+              <h2>Contact Info</h2>
+              <div class="info">
+                <p>
+                  <i class="fas fa-envelope"></i
+                  ><strong>Email: </strong> huunghia250102@gmail.com
+                </p>
+                <p>
+                  <i class="fas fa-phone"></i
+                  ><strong>Phone: </strong> 0817819589
+                </p>
+                <p>
+                  <i class="fas fa-map-marker-alt"></i
+                  ><strong>Address: </strong> Ho Chi Minh City, Viet Nam
+                </p>
+              </div>
+            </div>
           </div>
         </section>
-        <div id="image-popup" class="image-popup">
-          <img src="" alt="Hovered Image" id="popup-image" />
-        </div>
       </main>
 
       <footer>
