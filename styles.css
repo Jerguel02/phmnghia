@@ -294,6 +294,7 @@ header .btn {
   margin-top: 20px;
   transition: opacity 0.5s ease-in-out, background 0.3s, color 0.3s;
 }
+
 header .btn:hover {
   background: #007bff;
   color: white;
@@ -836,24 +837,13 @@ footer {
   z-index: -1;
 }
 
-header .container .btn {
-  opacity: 0;
-  display: inline-block;
-  padding: 20px 20px;
-  background: white;
-  color: #007bff;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 5px;
-  margin-top: 20px;
-  transition: opacity 0.5s ease-in-out, background 0.3s, color 0.3s;
-}
-
-header .container .btn:hover {
+header .btn:hover {
   background: #007bff;
   color: white;
 }
-
+header .btn.download-btn {
+  opacity: 1;
+}
 .modal {
   display: none;
   position: fixed;
