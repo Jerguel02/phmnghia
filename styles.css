@@ -1058,7 +1058,6 @@ textarea:not(:placeholder-shown) + .underline + label {
   background-position: -100% 0;
 }
 
-/* Tạo hiệu ứng "inner" để có màu đậm khi hover */
 .submit-btn .send-btn .inner {
   position: absolute;
   top: 0;
@@ -1072,12 +1071,10 @@ textarea:not(:placeholder-shown) + .underline + label {
   transform: scale(0);
 }
 
-/* Tạo hiệu ứng mở rộng "inner" khi hover */
 .submit-btn .send-btn:hover .inner {
-  transform: scale(1); /* Mở rộng hiệu ứng khi hover */
+  transform: scale(1);
 }
 
-/* Tạo hiệu ứng chuyển động cho button */
 .submit-btn .send-btn {
   position: relative;
   overflow: hidden;
@@ -1090,7 +1087,6 @@ textarea:not(:placeholder-shown) + .underline + label {
   transform: translate(-50%, -50%);
 }
 
-/* Contact Info Styles */
 .contact-info {
   flex: 1;
   min-width: 300px;
