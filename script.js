@@ -378,7 +378,11 @@ document
 
     emailjs.sendForm("service_7t0cyl1", "template_wsww9lu", form).then(
       function (response) {
-        showDialog("✔", "green", "Pham Nghia will contact you soon!");
+        showDialog(
+          "✔",
+          "green",
+          "Message sent successfully! Pham Nghia will contact you soon..."
+        );
         form.reset();
       },
       function (error) {
