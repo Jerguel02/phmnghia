@@ -161,7 +161,7 @@ header .social-icon {
   opacity: 0;
   position: relative;
   bottom: 140px;
-  right: -550px;
+  right: -400px;
   display: flex;
   gap: 15px;
   transform: translateY(30px);
