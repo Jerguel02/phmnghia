@@ -1014,7 +1014,6 @@ textarea:not(:placeholder-shown) + .underline + label {
   font-size: 18px;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .contact-container {
     flex-direction: column;
@@ -1029,25 +1028,25 @@ textarea:not(:placeholder-shown) + .underline + label {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(0.8); /* Bắt đầu nhỏ hơn */
+  transform: translate(-50%, -50%) scale(0.8);
   background-color: #fff;
-  padding: 30px 50px; /* Hộp thoại lớn hơn */
+  padding: 30px 50px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-  border-radius: 12px; /* Bo tròn hộp thoại */
+  border-radius: 12px;
   z-index: 1000;
   text-align: center;
-  opacity: 0; /* Bắt đầu mờ */
-  transition: opacity 1s ease, transform 2s ease; /* Hiệu ứng mượt */
+  opacity: 0;
+  transition: opacity 1s ease, transform 2s ease;
 }
 
 #statusDialog.show {
-  opacity: 1; /* Hiện hộp thoại */
-  transform: translate(-50%, -50%) scale(1); /* Phóng to */
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
 }
 
 #statusDialog.hide {
-  opacity: 0; /* Ẩn hộp thoại */
-  transform: translate(-50%, -50%) scale(0.8); /* Thu nhỏ */
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.8);
 }
 
 #statusDialog .dialog-content {
@@ -1057,9 +1056,9 @@ textarea:not(:placeholder-shown) + .underline + label {
 }
 
 #statusDialog span {
-  font-size: 64px; /* Dấu Tick/X lớn hơn */
+  font-size: 64px;
   margin-bottom: 15px;
-  animation: bounce 0.5s ease-out; /* Hiệu ứng phóng nhẹ cho dấu Tick/X */
+  animation: bounce 0.5s ease-out;
 }
 
 @keyframes bounce {

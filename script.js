@@ -358,35 +358,30 @@ document
     const dialogIcon = document.getElementById("dialogIcon");
     const dialogMessage = document.getElementById("dialogMessage");
 
-    // Hàm hiển thị hộp thoại
     function showDialog(icon, color, message) {
-      dialogIcon.textContent = icon; // Biểu tượng Tick hoặc X
-      dialogIcon.style.color = color; // Màu sắc biểu tượng
-      dialogMessage.textContent = message; // Nội dung thông báo
+      dialogIcon.textContent = icon;
+      dialogIcon.style.color = color;
+      dialogMessage.textContent = message;
 
       statusDialog.classList.remove("hidden", "hide");
       statusDialog.classList.add("show");
 
-      // Ẩn hộp thoại sau 3 giây
       setTimeout(() => {
         statusDialog.classList.remove("show");
         statusDialog.classList.add("hide");
 
-        // Sau khi hiệu ứng kết thúc, ẩn hẳn hộp thoại
         setTimeout(() => {
           statusDialog.classList.add("hidden");
-        }, 500); // Thời gian phù hợp với transition
+        }, 500);
       }, 4000);
     }
 
     emailjs.sendForm("service_7t0cyl1", "template_wsww9lu", form).then(
       function (response) {
-        // Hiển thị dấu Tick và thông báo thành công
         showDialog("✔", "green", "Pham Nghia will contact you soon!");
         form.reset();
       },
       function (error) {
-        // Hiển thị dấu X và thông báo lỗi
         showDialog(
           "✖",
           "red",
