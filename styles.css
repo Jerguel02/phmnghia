@@ -162,8 +162,8 @@ header {
 header .social-icon {
   opacity: 0;
   position: absolute;
-  bottom: 150px;
-  right: 40px;
+  bottom: 200px;
+  right: 50px;
   display: flex;
   gap: 15px;
   transform: translateY(30px);
@@ -256,6 +256,9 @@ header .social-icon ul li:nth-child(3):hover span {
 }
 header .social-icon ul li:nth-child(4):hover span {
   background: #fceb00 !important;
+}
+header .social-icon ul li:nth-child(5):hover span {
+  background: #1fe908 !important;
 }
 
 @keyframes blink {
