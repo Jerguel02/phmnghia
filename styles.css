@@ -449,7 +449,14 @@ section.page .experience h3 {
   font-weight: 600;
   margin-bottom: 15px;
 }
-
+#experience {
+  position: relative;
+}
+#experience .timeline-title {
+  position: absolute;
+  left: 40px;
+  font-size: 35px;
+}
 section.page .experience p {
   font-size: 1.1rem;
   margin-bottom: 10px;
@@ -575,8 +582,8 @@ footer {
 
 .objective-content p {
   line-height: 1.6;
-  font-size: 1.1rem;
-  color: #ddd;
+  font-size: 20px;
+  color: #dddddd;
 }
 
 .objective-stats {
@@ -629,7 +636,7 @@ footer {
   position: relative;
   margin: 50px auto;
   padding: 20px 0;
-  width: 90%;
+  width: 60%;
   max-width: 100%;
   max-height: 600px;
   overflow-y: auto;
@@ -704,9 +711,6 @@ footer {
   font-size: 1rem;
   color: #666;
   line-height: 1.6;
-}
-#experience .timeline-title {
-  color: #007bff;
 }
 @media (max-width: 600px) {
   .timeline ul li {
@@ -840,13 +844,61 @@ footer {
   z-index: -1;
 }
 
-header .btn:hover {
-  background: #007bff;
-  color: white;
-}
+/* Định dạng cơ bản cho nút */
 header .btn.download-btn {
   opacity: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #007bff;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
+
+header .btn.download-btn:hover {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+header .btn.download-btn:active {
+  transform: scale(0.95); /* Nhấn vào nút sẽ thu nhỏ */
+  animation: downloadClick 0.3s ease; /* Animation khi nhấn */
+}
+
+/* Hiển thị icon khi hover */
+header .btn.download-btn .download-icon {
+  margin-right: 10px;
+  opacity: 0; /* Ẩn icon ban đầu */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+header .btn.download-btn .download-icon {
+  opacity: 0; /* Hiển thị icon khi hover */
+  transform: translateY(-10px); /* Hiệu ứng di chuyển icon */
+}
+header .btn.download-btn:hover .download-icon {
+  opacity: 1; /* Hiển thị icon khi hover */
+  transform: translateY(0px); /* Hiệu ứng di chuyển icon */
+}
+
+/* Animation khi nhấn */
+@keyframes downloadClick {
+  0% {
+    transform: scale(0.95);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(0.95);
+  }
+}
+
 .modal {
   display: none;
   position: fixed;
@@ -973,19 +1025,69 @@ textarea:not(:placeholder-shown) + .underline + label {
   color: #007bff;
 }
 
-.submit-btn input {
-  padding: 10px 20px;
-  background: #007bff;
-  border: none;
+.submit-btn .send-btn {
+  width: 50%;
+  background-color: #1c1f25;
   color: #fff;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: background-color 0.3s;
+  padding: 10px;
+  background: linear-gradient(
+    to right,
+    #000000 0%,
+    #000000 50%,
+    #04ff00 50%,
+    #04ff00 100%
+  );
+  background-size: 200% 100%;
+  transition: background-position 0.3s ease;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
 
-.submit-btn input:hover {
-  background: #0056b3;
+.submit-btn .send-btn:hover {
+  background-color: #04ff00;
+  color: #ffffff;
+  padding: 10px;
+  background-position: -30% 0;
+}
+
+.submit-btn .send-btn:active {
+  background-color: #04ff00;
+  color: #000000;
+  padding: 10px;
+  background-position: -100% 0;
+}
+
+/* Tạo hiệu ứng "inner" để có màu đậm khi hover */
+.submit-btn .send-btn .inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300%;
+  height: 300%;
+  background-color: #45a049;
+  transition: all 0.4s ease;
+  z-index: -1;
+  border-radius: 50%;
+  transform: scale(0);
+}
+
+/* Tạo hiệu ứng mở rộng "inner" khi hover */
+.submit-btn .send-btn:hover .inner {
+  transform: scale(1); /* Mở rộng hiệu ứng khi hover */
+}
+
+/* Tạo hiệu ứng chuyển động cho button */
+.submit-btn .send-btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.submit-btn .send-btn .inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* Contact Info Styles */
