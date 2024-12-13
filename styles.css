@@ -162,7 +162,7 @@ header {
 header .social-icon {
   opacity: 0;
   position: absolute;
-  bottom: 200px;
+  bottom: 230px;
   right: 50px;
   display: flex;
   gap: 15px;
