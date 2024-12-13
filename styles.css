@@ -1024,3 +1024,56 @@ textarea:not(:placeholder-shown) + .underline + label {
     border-bottom: 1px solid #e9ecef;
   }
 }
+
+#statusDialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8); /* Bắt đầu nhỏ hơn */
+  background-color: #fff;
+  padding: 30px 50px; /* Hộp thoại lớn hơn */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  border-radius: 12px; /* Bo tròn hộp thoại */
+  z-index: 1000;
+  text-align: center;
+  opacity: 0; /* Bắt đầu mờ */
+  transition: opacity 1s ease, transform 2s ease; /* Hiệu ứng mượt */
+}
+
+#statusDialog.show {
+  opacity: 1; /* Hiện hộp thoại */
+  transform: translate(-50%, -50%) scale(1); /* Phóng to */
+}
+
+#statusDialog.hide {
+  opacity: 0; /* Ẩn hộp thoại */
+  transform: translate(-50%, -50%) scale(0.8); /* Thu nhỏ */
+}
+
+#statusDialog .dialog-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#statusDialog span {
+  font-size: 64px; /* Dấu Tick/X lớn hơn */
+  margin-bottom: 15px;
+  animation: bounce 0.5s ease-out; /* Hiệu ứng phóng nhẹ cho dấu Tick/X */
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(0.5);
+  }
+  60% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.hidden {
+  display: none;
+}
