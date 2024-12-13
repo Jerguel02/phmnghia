@@ -156,17 +156,20 @@ h1 {
   opacity: 0;
   transition: opacity 1s ease 1s;
 }
-
+header {
+  position: relative;
+}
 header .social-icon {
   opacity: 0;
-  position: relative;
-  bottom: 140px;
-  right: -400px;
+  position: absolute;
+  bottom: 150px;
+  right: 40px;
   display: flex;
   gap: 15px;
   transform: translateY(30px);
   transition: opacity 1s ease, transform 1s ease;
 }
+
 header .social-icon ul {
   position: relative;
   display: flex;
