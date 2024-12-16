@@ -366,3 +366,36 @@ document
       }
     );
   });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const sections = document.querySelectorAll(".page");
+  const navLinks = document.querySelectorAll("nav ul li a");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        const link = document.querySelector(`a[href="#${entry.target.id}"]`);
+
+        if (entry.isIntersecting) {
+          navLinks.forEach((link) => link.classList.remove("active"));
+          link.classList.add("active");
+          console.log(`${entry.target.id} is visible`);
+        } else {
+          link.classList.remove("active");
+        }
+      });
+    },
+    { threshold: 0.5 }
+  );
+
+  sections.forEach((section) => {
+    observer.observe(section);
+  });
+
+  navLinks.forEach((link) => {
+    link.addEventListener("click", function (e) {
+      navLinks.forEach((link) => link.classList.remove("active"));
+      e.target.classList.add("active");
+    });
+  });
+});

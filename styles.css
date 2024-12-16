@@ -360,9 +360,13 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #007bff;
+  color: #ff6347;
 }
 
+nav ul li a.active {
+  color: #ff6347;
+  font-weight: bold;
+}
 main {
   width: 100%;
 }
