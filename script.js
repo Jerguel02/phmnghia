@@ -39,18 +39,9 @@ document.addEventListener("DOMContentLoaded", () => {
     (entries, observer) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          if (window.scrollY > lastScrollY) {
-            entry.target.classList.add("show");
-            entry.target.classList.remove("hidden_left");
-            entry.target.classList.remove("hidden_right");
-          } else {
-            entry.target.classList.add("show");
-            entry.target.classList.remove("hidden_left");
-            entry.target.classList.remove("hidden_right");
-          }
+          entry.target.classList.add("show");
         } else {
           entry.target.classList.remove("show");
-          entry.target.classList.add("hidden_right");
         }
       });
     },
@@ -58,12 +49,6 @@ document.addEventListener("DOMContentLoaded", () => {
       threshold: 0.1,
     }
   );
-
-  sections.forEach((section) => {
-    section.classList.add("hidden_right");
-    section.classList.add("hidden_left");
-    observer.observe(section);
-  });
 
   window.addEventListener("scroll", () => {
     lastScrollY = window.scrollY;
@@ -177,27 +162,12 @@ const imagePopup = document.getElementById("image-popup");
 const popupImage = document.getElementById("popup-image");
 
 document.querySelectorAll(".section").forEach((section) => {
-  const imagePopup = document.getElementById("image-popup");
-  const popupImage = document.getElementById("popup-image");
-
   section.addEventListener("mouseover", () => {
     const bgImage = section.getAttribute("data-bg-image");
     popupImage.src = bgImage;
-    imagePopup.classList.add("show");
-  });
-
-  section.addEventListener("mouseout", () => {
-    imagePopup.classList.remove("show");
-  });
-
-  section.addEventListener("mousemove", (e) => {
-    const mouseX = e.clientX;
-    const mouseY = e.clientY;
-
-    imagePopup.style.left = mouseX + 20 + "px";
-    imagePopup.style.top = mouseY + 20 + "px";
   });
 });
+
 document.addEventListener("DOMContentLoaded", () => {
   const cursorElement = document.getElementById("cursor");
   const degreeElement = document.getElementById("degree");
