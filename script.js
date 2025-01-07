@@ -71,42 +71,43 @@ async function startTypingEffect() {
   const cursor = document.getElementById("cursor");
 
   const wordsWithSlogans = [
-    { word: "Embedded", slogan: " - The foundation of embedded systems." },
-    { word: "IoT", slogan: " - Connecting everything within reach." },
-    { word: "C/C++", slogan: " - The language of performance and control." },
-    { word: "Python", slogan: " - Powerful, easy to learn, versatile." },
-    { word: "PyQt5", slogan: " - Build strong GUIs with Python." },
     {
-      word: "AI/Computer Vision",
-      slogan: " - Bringing intelligence into vision.",
-    },
-    { word: "HTML/CSS", slogan: " - Building and styling the web world." },
-    { word: "JavaScript", slogan: " - Driving dynamic web experiences." },
-    { word: "C#", slogan: " - Versatile power for all applications." },
-    { word: "Window Form", slogan: " - Simple and efficient Windows apps." },
-    { word: "React", slogan: " - Interactive UIs with React" },
-    { word: "NodeJs", slogan: " - Efficient Backend with NodeJS" },
-    { word: "Linux", slogan: " - The operating system of freedom." },
-    {
-      word: "MATLAB/Simulink",
-      slogan: " - Simplifying simulation and data analysis.",
-    },
-    { word: "Arduino", slogan: " - Turning DIY ideas into reality." },
-    { word: "ESP32", slogan: " - The core of your IoT projects." },
-    { word: "STM32Fx", slogan: " - High-performance embedded solutions." },
-    {
-      word: "Raspberry Pi",
-      slogan: " - Compact computing with endless possibilities.",
+      word: "Empowering IoT and AI ",
+      slogan: "for smarter, connected futures.",
     },
     {
-      word: "Jetson Nano",
-      slogan: " - AI and GPU power at your fingertips.",
+      word: "Bridging embedded systems and AI ",
+      slogan: "to drive innovation.",
     },
     {
-      word: "OOP",
-      slogan: " - Object-oriented thinking, streamlined solutions.",
+      word: "From Python to AI,",
+      slogan: " transforming code into intelligence.",
     },
-    { word: "RTOS", slogan: " - Efficient real-time management." },
+    {
+      word: "Crafting intelligent solutions ",
+      slogan: " with AI, IoT, and embedded systems.",
+    },
+    { word: "Optimizing the world ", slogan: "with AI-powered systems." },
+    {
+      word: "Driving innovation ",
+      slogan: "at the crossroads of AI and engineering.",
+    },
+    {
+      word: "Integrating AI into embedded systems ",
+      slogan: "for smarter solutions.",
+    },
+    {
+      word: "Mastering AI, IoT, and embedded technologies ",
+      slogan: "to shape the future.",
+    },
+    {
+      word: "Innovating with AI and IoT ",
+      slogan: "for a more connected tomorrow.",
+    },
+    {
+      word: "Harnessing AI ",
+      slogan: "to redefine the possibilities of embedded systems.",
+    },
   ];
 
   let currentIndex = 0;
